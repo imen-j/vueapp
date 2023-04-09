@@ -1,0 +1,482 @@
+{
+	"info": {
+		"_postman_id": "1e7354cf-2cb3-4eaf-8ab1-2fa8f6d36dad",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19647902"
+	},
+	"item": [
+		{
+			"name": "creationCompte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "jhgjsknbhjguskl5554df464dg4fjghf54sd5d6df7468f7hg5f4gvd46cs7s8fth64g6fd788654cs6r7f87fd64s8r67f",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test123",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chrif@gaz-elec-moinscher.fr",
+							"type": "text"
+						},
+						{
+							"key": "nom",
+							"value": "chrif",
+							"type": "text"
+						},
+						{
+							"key": "prenom",
+							"value": "slimen",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://testbackend.smart-electricite.com/api/createCompte/",
+					"protocol": "http",
+					"host": [
+						"testbackend",
+						"smart-electricite",
+						"com"
+					],
+					"path": [
+						"api",
+						"createCompte",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "chrif@gaz-elec-moinscher.fr",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "test123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ajouterSociete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						},
+						{
+							"key": "RaisonSocial",
+							"value": "LA FOURNEE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ajouterSociete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ajouterSociete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSocieteByCompte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getSocieteByCompte/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getSocieteByCompte",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSocieteBySiret",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getSocieteBySiret/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getSocieteBySiret",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ajouterCompteurToSociete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						},
+						{
+							"key": "numCompteur",
+							"value": "GI123123",
+							"type": "text"
+						},
+						{
+							"key": "consommation",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "typeEnergie",
+							"value": "GAZ",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/ajouterCompteurToSociete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"ajouterCompteurToSociete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getListeCompteurParSociete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getListeCompteurParSociete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getListeCompteurParSociete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getOneCompteurParSociete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						},
+						{
+							"key": "numCompteur",
+							"value": "GI123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getCompteurParSociete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getCompteurParSociete",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "effectuerUnCalcule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						},
+						{
+							"key": "numCompteur",
+							"value": "GI123123",
+							"type": "text"
+						},
+						{
+							"key": "dateDebut",
+							"value": "01/04/2023",
+							"type": "text"
+						},
+						{
+							"key": "dateFin",
+							"value": "31/12/2024",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/effectuerUnCalcule/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"effectuerUnCalcule",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHistoriqueDeCalculeParCompte",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getHistoriqueDeCalculeParCompte/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getHistoriqueDeCalculeParCompte",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getHistoriqueDeCalculeParSociete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "token",
+							"value": "27d9d69f1193e08793d123c3318b20b7d9092a2ac9404c4e0c0313a3f49a7646",
+							"type": "text"
+						},
+						{
+							"key": "siret",
+							"value": "38488874900031",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/getHistoriqueDeCalculeParSociete/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"getHistoriqueDeCalculeParSociete",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
